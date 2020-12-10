@@ -17,13 +17,13 @@ app.get('/', function(req,res){
 var dbConn= mysql.createConnection({
     host: 'localhost',
     user: 'root',
-    password: '',
-    database: '7tqma5u2bg'
+    password: 'psnet',
+    database: 'sales'
 });
 
 dbConn.connect();
 
-// Menampilkan data all user
+// Menampilkan data all promosi
 app.get('/promotion', function (req, res) {
     dbConn.query('SELECT * FROM promosi', function (error, results, fields) {
         if (error) throw error;
@@ -31,7 +31,7 @@ app.get('/promotion', function (req, res) {
     });
 });
 
-// Menampilkan data user detail
+// Menampilkan data promosi detail
 app.get('/promotion/:id', function (req, res) {
   
     let promo_id = req.params.id;
