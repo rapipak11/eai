@@ -16,9 +16,9 @@ app.get('/', function(req,res){
 
 var dbConn= mysql.createConnection({
     host: 'localhost',
-    user: 'root',
-    password: 'psnet',
-    database: 'T7ojVJItSP'
+    user: '7TqMA5U2Bg',
+    password: 'T7ojVJItSP',
+    database: '7TqMA5U2Bg'
 });
 
 dbConn.connect();
