@@ -18,7 +18,7 @@ var dbConn= mysql.createConnection({
     host: 'localhost',
     user: 'root',
     password: 'psnet',
-    database: 'sales'
+    database: 'T7ojVJItSP'
 });
 
 dbConn.connect();
